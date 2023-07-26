@@ -1,0 +1,15 @@
+@import "./styles/base";
+
+#root {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+footer {
+  padding: 2rem;
+}
+
+header {
+  height: pxToRem(80px);
+}

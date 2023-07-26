@@ -1,0 +1,21 @@
+@import "../styles/base";
+
+section {
+  box-sizing: border-box;
+  width: pxToRem(840px);
+  background-color: $white;
+  padding: pxToRem(55px);
+  border-radius: 20px 20px 175px 20px;
+
+  & hr {
+    border: 0.5px solid $smokey-grey;
+  }
+
+  @media screen and (max-width: 375px) {
+    & {
+      width: 100%;
+      padding: pxToRem(55px) pxToRem(30px);
+      border-radius: 20px 20px 120px 20px;
+    }
+  }
+}
