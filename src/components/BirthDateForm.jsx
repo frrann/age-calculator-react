@@ -1,10 +1,10 @@
 import { useForm } from "react-hook-form";
-import { monthDays } from "./AgeCalculator";
+import { daysOfMonth } from "../helpers";
 
 import arrow from "../assets/images/icon-arrow.svg";
-import classes from "./BirthDateInputs.module.scss";
+import classes from "./BirthDateForm.module.scss";
 
-const BirthDateInputs = ({ onSetBirthDate }) => {
+const BirthDateForm = ({ onSetBirthDate }) => {
   const {
     register,
     handleSubmit,
@@ -25,10 +25,10 @@ const BirthDateInputs = ({ onSetBirthDate }) => {
   return (
     <>
       <form
-        className={classes["date-form"]}
+        className={classes["date__form"]}
         onSubmit={handleSubmit(formSubmitHandler)}
       >
-        <div className={classes["inputs--mobile"]}>
+        <div className={classes["form__inputs--mobile"]}>
           <div
             className={`${classes.inputs} ${
               errors.day ? classes.invalid : null
@@ -46,7 +46,7 @@ const BirthDateInputs = ({ onSetBirthDate }) => {
                 validate: (value, values) => {
                   return !values.month
                     ? true
-                    : monthDays[values.month - 1] < value
+                    : daysOfMonth[values.month - 1] < value
                     ? false
                     : true;
                 },
@@ -91,7 +91,7 @@ const BirthDateInputs = ({ onSetBirthDate }) => {
             {errors.year?.type === "max" && <p>Must be in the past</p>}
           </div>
         </div>
-        <div className={classes["btn-wrapper"]}>
+        <div className={classes["btn--wrapper"]}>
           <button>
             <img src={arrow} alt="arrow" />
           </button>
@@ -101,4 +101,4 @@ const BirthDateInputs = ({ onSetBirthDate }) => {
   );
 };
 
-export default BirthDateInputs;
+export default BirthDateForm;
