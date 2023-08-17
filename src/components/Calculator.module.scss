@@ -1,15 +1,9 @@
 @import "../styles/base";
 
-.age-section {
+.calculator {
   font-size: pxToRem(82px);
   font-weight: 700;
   font-style: italic;
-
-  @media screen and (max-width: 375px) {
-    & {
-      font-size: pxToRem(48px);
-    }
-  }
 
   & p {
     margin: 0;
@@ -18,5 +12,11 @@
 
   & span {
     color: $purple;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      font-size: pxToRem(48px);
+    }
   }
 }
