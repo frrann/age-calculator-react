@@ -31,11 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshot.jpg)
+![](./public/screenshot.png)
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/age-calculator-app-using-react-Sw53R29LfM)
 - [Live Site](https://frrann-age-calculator-app.netlify.app/)
 
 ## My process
