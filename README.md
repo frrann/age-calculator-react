@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/screenshot.png)
+![](./public/chrome_dnoFazme3v.gif)
 
 ### Links
 
